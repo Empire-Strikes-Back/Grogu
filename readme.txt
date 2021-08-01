@@ -5,4 +5,3 @@ my language is clojure
 my runtime is jvm
 my interface is cljfx
 i compile and run from cli, i require jvm, clj
-i have no logo - my name, a word - linux-memory-monitor - defines me
