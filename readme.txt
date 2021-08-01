@@ -6,5 +6,3 @@ my runtime is jvm
 my interface is cljfx
 i compile and run from cli, i require jvm, clj
 i have no logo - my name, a word - linux-memory-monitor - defines me
-i have no git history - my source files define me
-i accept no github pull requests - i have no public programmers
