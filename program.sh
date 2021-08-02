@@ -26,4 +26,30 @@ uberjar(){
   mv out/linux-memory-monitor.standalone.jar out/jpackage-input/
 }
 
+j-package(){
+  OS=${1:?"Need OS type (windows/linux/mac)"}
+
+  echo "Starting compilation..."
+
+  if [ "$OS" == "windows" ]; then
+    J_ARG="--win-menu --win-dir-chooser --win-shortcut"
+          
+  elif [ "$OS" == "linux" ]; then
+      J_ARG="--linux-shortcut"
+  else
+      J_ARG=""
+  fi
+
+  jpackage \
+    --input out/jpackage-input \
+    --dest out \
+    --main-jar linux-memory-monitor.standalone.jar \
+    --name "linux-memory-monitor" \
+    --main-class clojure.main \
+    --arguments -m \
+    --arguments linux-memory-monitor.main \
+    --app-version "1" \
+    $J_ARG
+}
+
 "$@"
