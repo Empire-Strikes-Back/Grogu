@@ -17,6 +17,17 @@ main(){
     -M -m linux-memory-monitor.main
 }
 
+uberjar(){
+  clojure \
+    -X:uberjar hf.depstar/uberjar \
+    :aot true \
+    :jar out/linux-memory-monitor.standalone.jar \
+    :verbose false \
+    :main-class linux-memory-monitor.main
+  mkdir -p out/jpackage-input
+  mv out/linux-memory-monitor.standalone.jar out/jpackage-input/
+}
+
 j-package(){
   OS=${1:?"Need OS type (windows/linux/mac)"}
 
