@@ -17,15 +17,6 @@ main(){
     -M -m linux-memory-monitor.main
 }
 
-uberjar(){
-  clj \
-    -X:uberjar genie.core/process \
-    :uberjar-name out/linux-memory-monitor.standalone.jar \
-    :main-ns linux-memory-monitor.main
-  mkdir -p out/jpackage-input
-  mv out/linux-memory-monitor.standalone.jar out/jpackage-input/
-}
-
 j-package(){
   OS=${1:?"Need OS type (windows/linux/mac)"}
 
