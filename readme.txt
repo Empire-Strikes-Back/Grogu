@@ -1,4 +1,4 @@
-i am linux-memory-monitor program - i am game
+i am linux-memory-monitor program
 
 my language is clojure
 my runtime is jvm
