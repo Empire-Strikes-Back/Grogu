@@ -17,7 +17,7 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <string>linux memory monitor</string>
+   <string>blue cookies? frogs? i'm going whole foods vegan</string>
   </property>
   <property name="toolTip">
    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;this program calculates total RAM usage for a group of processes (no shared memory duplication)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
